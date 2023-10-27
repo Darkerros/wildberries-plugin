@@ -12,7 +12,10 @@
 
   "content_scripts": [
       {
-          "matches": ["<all_urls>"],
+        "run_at": "document_end",
+          "matches": [
+            "https://www.wildberries.ru/catalog/*"
+          ],
           "js": ["js/vendor.js", "js/product_page_script.js"]
       }
   ],
@@ -22,10 +25,18 @@
   },
 
   "permissions": [
-    "storage"
+    "activeTab",
+    "storage",
+    "unlimitedStorage",
+    "webRequest"
   ],
-
   "host_permissions": [
-    "<all_urls>"
+    "https://card.wb.ru/cards/v1/*",
+    "https://www.wildberries.ru/*",
+    "https://wildberries.ru/*",
+    "https://www.seller.wildberries.ru/*",
+    "https://seller.wildberries.ru/*",
+    "https://www.cmp.wildberries.ru/*",
+    "https://cmp.wildberries.ru/*"
   ]
 }

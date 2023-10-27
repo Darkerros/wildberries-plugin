@@ -1,0 +1,29 @@
+.spo-component {
+    padding: 16px;
+
+    border-radius: 8px;
+    background-color: rgba(23, 23, 23, 0.025);
+
+    margin-bottom: 16px;
+}
+
+.spo-component__text {
+    gap: 15px;
+    display: flex;
+}
+
+.spo-component__text-element-title {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: rgb(107, 114, 128);
+
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.spo-component__text-element-content {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #000;
+}

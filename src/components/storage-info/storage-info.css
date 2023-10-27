@@ -1,0 +1,44 @@
+.storage-info {
+    padding: 20px;
+    margin: 24px 0;
+
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+
+    @media screen and (max-width: 1023px) {
+
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+
+.storage-info__title {
+    color: #555;
+    font-weight: bold;
+}
+
+.storage-info__main-store-info {
+    margin-top: 10px;
+    padding-bottom: 8px;
+
+    font-size: 0.85rem;
+    font-weight: bold;
+
+    border-bottom: solid 1px rgba(0,0,0,0.15);
+}
+
+.storage-info__stores {
+    margin-top: 10px;
+
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: repeat(1,minmax(max-content, 140px)) repeat(1, 60px) repeat(1, 70px);
+
+    font-size: 0.85rem;
+}
+
+.storage-info__stores-time {
+    font-weight: bold;
+}
